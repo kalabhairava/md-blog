@@ -5,7 +5,7 @@ interface IProps {
   readonly siteTitle: string;
 }
 
-export const Header: React.SFC<IProps> = ({siteTitle}) => (
+export const Header: React.FC<IProps> = ({siteTitle}) => (
   <header
     style={{
       background: `rebeccapurple`,

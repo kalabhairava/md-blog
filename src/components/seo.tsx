@@ -15,7 +15,7 @@ interface IProps extends Pick<HelmetProps, 'meta'> {
   readonly title: string;
 }
 
-export const SEO: React.SFC<IProps> = ({
+export const SEO: React.FC<IProps> = ({
   description = '',
   lang = 'en',
   meta = [],
