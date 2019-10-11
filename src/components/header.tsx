@@ -1,17 +1,18 @@
+import styled from '@emotion/styled';
 import {Link} from 'gatsby';
 import React from 'react';
+
+const StyledHeader = styled.header`
+  background: teal;
+  margin-bottom: 1.5rem;
+`;
 
 interface IProps {
   readonly siteTitle: string;
 }
 
 export const Header: React.FC<IProps> = ({siteTitle}) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <StyledHeader>
     <div
       style={{
         margin: `0 auto`,
@@ -31,5 +32,5 @@ export const Header: React.FC<IProps> = ({siteTitle}) => (
         </Link>
       </h1>
     </div>
-  </header>
+  </StyledHeader>
 );

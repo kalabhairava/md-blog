@@ -29,7 +29,8 @@ module.exports = {
     },
     // This plugin adds the babel preset `@babel/preset-typescript` to instruct babel
     // to transpile TS files
-    `gatsby-plugin-typescript`,
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-emotion',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

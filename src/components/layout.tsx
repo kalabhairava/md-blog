@@ -7,9 +7,10 @@
 
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
+import {Global} from '@emotion/core';
 
 import {Header} from './header';
-import './layout.css';
+import {globalStyles} from '../utils/globalStyles';
 
 export const Layout: React.FC<{}> = ({children}) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ export const Layout: React.FC<{}> = ({children}) => {
 
   return (
     <>
+      <Global styles={globalStyles} />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
