@@ -2,8 +2,8 @@
 module.exports = {
   siteMetadata: {
     title: `Manjunatha's blog`,
-    description: `Manjunatha's blog. Built with Gatsby.`,
-    author: `Manjunatha D`,
+    description: `Manjunatha's blog on JavaScript and its relatives.`,
+    author: `Manjunatha D (https://twitter.com/__manjunathad)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,8 +32,5 @@ module.exports = {
     // to transpile TS files
     'gatsby-plugin-typescript',
     'gatsby-plugin-emotion',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

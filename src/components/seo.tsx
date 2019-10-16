@@ -1,18 +1,11 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import {Helmet, HelmetProps} from 'react-helmet';
 import {useStaticQuery, graphql} from 'gatsby';
 
 interface IProps extends Pick<HelmetProps, 'meta'> {
+  readonly title: string;
   readonly description?: string;
   readonly lang?: string;
-  readonly title: string;
 }
 
 export const SEO: React.FC<IProps> = ({
